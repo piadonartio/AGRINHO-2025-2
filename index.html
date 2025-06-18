@@ -1,19 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evolução da tecnologia na Agricultura</title>
-    <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tecnologia na Agricultura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolução da Tecnologia na Agricultura</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #2e7d32;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .container.left {
+      left: 0;
+    }
+
+    .container.right {
+      left: 50%;
+    }
+
+    .content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #4caf50;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #4caf50;
+      border: 4px solid white;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .container.left::after {
+      left: -10px;
+    }
+
+    .container.right::after {
+      right: -10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .container.right {
+        left: 0;
+      }
+
+      .timeline::after {
+        left: 31px;
+      }
+
+      .container::after {
+        left: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Linha do Tempo: Tecnologia na Agricultura</h1>
+
+  <h1>🌱 Linha do Tempo: Tecnologia na Agricultura 🌾</h1>
+
   <div class="timeline">
 
     <div class="container left">
@@ -59,11 +150,6 @@
     </div>
 
   </div>
-</body>
-</html>
 
-</head>
-<body>
-    
 </body>
 </html>
