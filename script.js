@@ -15,5 +15,29 @@ const agricultureChart = new Chart(ctx, {
             label: 'Produção Agrícola',
             data: [10, 20, 30, 40, 50, 60, 70, 80],  // Exemplo de dados
             borderColor: '#0a8f8b',
-            backgroundColor: 'rgba(10, 143, 139, 0.
-00
+            backgroundColor: 'rgba(10, 143, 139, 0.2)',
+            fill: true,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Evolução da Produção Agrícola',
+                font: {
+                    size: 20
+                }
+            },
+            legend: {
+                position: 'top',
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
