@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teconologia na Agricultura</title>
+    <title>Inovações Tecnológicas na Agricultura</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Inovações na Agricultura</h1>
-        <p>A tecnologia tem transformado a maneira como produzimos alimentos e gerenciamos as lavouras. Acompanhe a evolução!</p>
+        <div class="logo">
+            <h1>Inovações na Agricultura</h1>
+            <p>Transformando a produção de alimentos com tecnologia</p>
+        </div>
     </header>
 
-    <section class="content">
-        <div class="evolution">
-            <h2>A Evolução da Agricultura</h2>
-            <p>Desde a invenção do arado até o uso de drones e inteligência artificial, a agricultura tem se adaptado constantemente às novas tecnologias.</p>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#evolucao">Evolução</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#grafico">Gráficos</a></li>
+            <li><a href="#video">Vídeo</a></li>
+        </ul>
+    </nav>
 
-        <div class="image-section">
-            <h3>Imagens da Evolução</h3>
-            <div class="image-container">
-                <div class="image-item" id="image1">
-                    <p>Imagens antigas da agricultura</p>
-                    <!-- Imagem a ser inserida -->
-                    <img src="image1.jpg" alt="Imagem antiga da agricultura">
-                </div>
-                <div class="image-item" id="image2">
-                    <p>Uso de tecnologia no campo</p>
-                    <!-- Imagem a ser inserida -->
-                    <img src="image2.jpg" alt="Tecnologia na agricultura">
-                </div>
+    <section id="evolucao" class="section">
+        <h2 class="section-title">A Evolução da Agricultura</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <h3>Era Pré-Industrial</h3>
+                <p>O uso manual e rudimentar de ferramentas para cultivar a terra.</p>
+                <img src="era-pre-industrial.jpg" alt="Era Pré-Industrial">
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <h3>Revolução Industrial</h3>
+                <p>Introdução de máquinas como tratores e sistemas de irrigação automatizados.</p>
+                <img src="revolucao-industrial.jpg" alt="Revolução Industrial">
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <h3>Era Digital</h3>
+                <p>Uso de drones, sensores e Big Data para otimizar a produção.</p>
+                <img src="era-digital.jpg" alt="Era Digital">
             </div>
         </div>
     </section>
 
+    <section id="tecnologias" class="section">
+        <h2 class="section-title">Tecnologias na Agricultura</h2>
+        <div class="tech-cards">
+            <div class="tech-card">
+                <h3>Sensores Inteligentes</h3>
+                <p>Utilizados para monitoramento do solo e clima em tempo real.</p>
+                <img src="sensor.jpg" alt="Sensores Inteligentes">
+            </div>
+            <div class="tech-card">
+                <h3>Drones</h3>
+                <p>Drones ajudam na supervisão de grandes lavouras e na aplicação de pesticidas.</p>
+                <img src="drones.jpg" alt="Drones">
+            </div>
+            <div class="tech-card">
+                <h3>Inteligência Artificial</h3>
+                <p>A IA auxilia na previsão de colheitas e otimização de processos agrícolas.</p>
+                <img src="ia.jpg" alt="Inteligência Artificial">
+            </div>
+        </div>
+    </section>
+
+    <section id="grafico" class="section">
+        <h2 class="section-title">Evolução da Produção Agrícola (2010 - 2025)</h2>
+        <canvas id="agricultureChart"></canvas>
+    </section>
+
+    <section id="video" class="section">
+        <h2 class="section-title">Tecnologia na Agricultura - O Futuro</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <footer>
-        <p>Fonte: Pesquisa sobre inovações agrícolas</p>
+        <p>&copy; 2025 Tecnologia na Agricultura - Todos os direitos reservados</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
