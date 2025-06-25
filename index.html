@@ -1,155 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evolução da Tecnologia na Agricultura</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000000;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 30px;
-      color: #2e7d32;
-    }
-
-    .timeline {
-      position: relative;
-      max-width: 1000px;
-      margin: 40px auto;
-    }
-
-    .container {
-      padding: 10px 40px;
-      position: relative;
-      background-color: inherit;
-      width: 50%;
-    }
-
-    .container.left {
-      left: 0;
-    }
-
-    .container.right {
-      left: 50%;
-    }
-
-    .content {
-      padding: 20px 30px;
-      background-color: white;
-      position: relative;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background-color: #4caf50;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-    }
-
-    .container::after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      right: -10px;
-      background-color: #4caf50;
-      border: 4px solid white;
-      top: 15px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-
-    .container.left::after {
-      left: -10px;
-    }
-
-    .container.right::after {
-      right: -10px;
-    }
-
-    @media screen and (max-width: 768px) {
-      .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-      }
-
-      .container.right {
-        left: 0;
-      }
-
-      .timeline::after {
-        left: 31px;
-      }
-
-      .container::after {
-        left: 15px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teconologia na Agricultura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Inovações na Agricultura</h1>
+        <p>A tecnologia tem transformado a maneira como produzimos alimentos e gerenciamos as lavouras. Acompanhe a evolução!</p>
+    </header>
 
-  <h1>🌱 Linha do Tempo: Tecnologia na Agricultura 🌾</h1>
+    <section class="content">
+        <div class="evolution">
+            <h2>A Evolução da Agricultura</h2>
+            <p>Desde a invenção do arado até o uso de drones e inteligência artificial, a agricultura tem se adaptado constantemente às novas tecnologias.</p>
+        </div>
 
-  <div class="timeline">
+        <div class="image-section">
+            <h3>Imagens da Evolução</h3>
+            <div class="image-container">
+                <div class="image-item" id="image1">
+                    <p>Imagens antigas da agricultura</p>
+                    <!-- Imagem a ser inserida -->
+                    <img src="image1.jpg" alt="Imagem antiga da agricultura">
+                </div>
+                <div class="image-item" id="image2">
+                    <p>Uso de tecnologia no campo</p>
+                    <!-- Imagem a ser inserida -->
+                    <img src="image2.jpg" alt="Tecnologia na agricultura">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container left">
-      <div class="content">
-        <h2>1930</h2>
-        <p>A agricultura brasileira passou por grandes transformações a partir de 1930, marcadas pela intensificação da produção, o uso de tecnologias e a diversificação de culturas, além de políticas governamentais que impulsionaram a ocupação de novas regiões. </p>
-      </div>
-    </div>
+    <footer>
+        <p>Fonte: Pesquisa sobre inovações agrícolas</p>
+    </footer>
 
-    <div class="container right">
-      <div class="content">
-        <h2>1950</h2>
-        <p>Em 1950, a agricultura brasileira estava em um processo de modernização, mas ainda era caracterizada por práticas rudimentares e baixa produtividade, especialmente fora da produção de café.</p>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <h2>1970</h2>
-        <p>De 1970 passou por uma grande transformação, marcada pela intensificação do uso de tecnologias e a expansão da fronteira agrícola, especialmente com a soja no Cerrado.</p>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <h2>1990</h2>
-        <p>Na década de 1990, a agricultura brasileira passou por um período de intensa transformação, impulsionada por políticas de estabilização econômica e pela abertura do mercado.</p>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <h2>2000</h2>
-        <p>A agricultura brasileira passou por grandes transformações a partir do ano 2000, com destaque para a modernização, expansão da área cultivada e aumento da produtividade.</p>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <h2>2020</h2>
-        <p>Em 2020, a agricultura brasileira alcançou um novo patamar de valor da produção, chegando a R$ 470,5 bilhões, um aumento de 30,4% em relação ao ano anterior, segundo o IBGE. A área plantada também expandiu, com um crescimento de 2,7%, totalizando 83,4 milhões de hectares.</p>
-      </div>
-    </div>
-
-  </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
